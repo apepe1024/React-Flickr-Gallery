@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.search-form input {
+  width: 35%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-style: none;
+  border: 1px solid lightgrey;
+  padding: 8px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  background-color: rgba(211, 211, 211, 0.29);
+}
+
+input::placeholder {
+  color: black;
+}
+
+.search-button {
+  background-color: rgb(79, 149, 199);
+  border-style: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  width: 35px;
+}
+
+svg {
+  height: 10px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.loading {
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width:  50px;
+  background: url("./images/loading.gif");
+  background-size: cover;
+}
+
+.no-results {
+  margin-top: 60px;
+  color: rgb(66, 63, 63);
+}
+
+.list-item a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(79, 149, 199);
+  margin: 10px 20px 0 0;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.list-item .active{
+  background-color: rgb(16, 75, 129);
+}
+
+.search-button:hover {
+  background-color: rgb(16, 75, 129);
+  transition: all .3s ease-in-out;
+}
+
+.photo-heading {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 30px;
+  color: rgb(66, 63, 63);
+}
+
+.heading {
+  margin-top: 30px;
+}
+
+.photo-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.photo {
+  width: 210px;
+  height: 140px;
+  padding: 1px;
+  margin: 5px;
+  border: .5px solid lightgrey;
+}
+
+.photo:hover {
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.329);
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05)
+}
